@@ -133,6 +133,8 @@ input {
           position: relative;
           display: inline-block;
           box-shadow: 0 5px rgba(14,54,5,0.75);
+
+          cursor: pointer;
 }
 
 .btn:active {
@@ -177,20 +179,27 @@ form > p > b {
           }
 
           .first-half {
-                    width: 700px;
-                    margin: 0 auto;
-                    padding: 0 50px;
+                    max-width: 410px;;
           }
 
+          .title {
+                    display: flex;
+                    justify-content: start;
+          }
+          
           .title-text {
-                    font-size: 28px;
-                    width: 80%;
+                    width: 100%;
+                    max-width: 300px;
+
+                    font-size: 30px;
+                    padding: 0;
+                    text-align: left;
           }
 
-            
           .content {
-                    width: 100%;
+                    width: 90%;
                     text-align: left;
+                    font-size: 12px;
           }
           
           .first-content {
@@ -199,5 +208,5 @@ form > p > b {
                     font-size: 11px;
                     white-space: nowrap;
           }
-        
+
 }
