@@ -180,23 +180,25 @@ form > p > b {
 
 }
 
-
-.email-err {
+/* .email-err {
     display: flex;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     
     position: absolute;
     top: 150px;
     right: 30px;
     
-} 
+}  */
 
 .err {
     width: 15px;
-    display: none;
+    /* display: none; */
+
+    right: 30px;
+    top: 0px;
 }
 
-.error1, .error2, .error3 {
+.error1, .error2, .error3, .error4 {
     width: 15px;
     position: absolute;
     /* top: 20px; */
@@ -217,57 +219,70 @@ form > p > b {
 
 .error3 {
     right: 30px;
-    top: 230px;
+    top: 175px;
     display: none;
 }
 
+.error4 {
+    right: 30px;
+    top: 250px;
+    display: none;
+}
+
+
+
 @media (min-width: 800px) {
-          .container {
-                    display: flex;
-                    padding: 20px 20px 80px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;                    
-          }
-          
-          .wrapper {
-                    width: 80%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;       
-                    align-items: center;             
-          }
+    .container {
+            display: flex;
+            padding: 20px 20px 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;      
+            height: 100vh;              
+    }
+    
+    .wrapper {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;       
+            align-items: center;             
+    }
 
-          .first-half {
-                    max-width: 410px;;
-          }
+    .first-half {
+            max-width: 410px;;
+    }
 
-          .title {
-                    display: flex;
-                    justify-content: start;
-          }
-          
-          .title-text {
-                    width: 100%;
-                    max-width: 300px;
+    .title {
+            display: flex;
+            justify-content: start;
+    }
+    
+    .title-text {
+            width: 100%;
+            max-width: 300px;
 
-                    font-size: 30px;
-                    padding: 0;
-                    text-align: left;
-          }
+            font-size: 30px;
+            padding: 0;
+            text-align: left;
+    }
 
-          .content {
-                    width: 90%;
-                    text-align: left;
-                    font-size: 12px;
-          }
-          
-          .first-content {
-                    width: 80%;
-                    margin: 0 auto;
-                    font-size: 11px;
-                    white-space: nowrap;
-          }
+    .content {
+            width: 90%;
+            text-align: left;
+            font-size: 12px;
+    }
+    
+    .first-content {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 11px;
+            white-space: nowrap;
+    }
+
+
+    /* -============== */
+        
 
 }
