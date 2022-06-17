@@ -23,6 +23,9 @@
           --font-heading: 20px;
 }
 
+body {
+    font-family: Poppins;
+}
 
 .container {
           width: 100vw;
@@ -159,6 +162,20 @@ form > p > b {
           font-size: 12px;
 }
 
+/* ======================= */
+.first {
+    text-align: right;
+    margin-bottom: 15px;
+    color: red;
+    font-weight: var(--poppins500);
+    font-size: 12px;
+
+    margin-top: -10px;
+    margin-bottom: 0;
+
+    display: none;
+
+}
 
 @media (min-width: 800px) {
           .container {
