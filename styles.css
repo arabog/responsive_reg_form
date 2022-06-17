@@ -29,7 +29,6 @@ body {
 
 .container {
           width: 100vw;
-          /* height: 100vh; */
           background-image: url(./images/bg-intro-mobile.png);
           background-color: var(--red);
           background-repeat: no-repeat;        
@@ -37,7 +36,6 @@ body {
           padding: 90px 25px 70px;
           font-size: var(--font-value);
           color: var(--white);
-          /* overflow: hidden; */
 }
 
 .wrapper {
@@ -156,8 +154,6 @@ input {
             text-align: center;
             padding: 0 10px;
             margin-top: 7px;
-            
-           
 }
 
 form > p > b {
@@ -173,28 +169,13 @@ form > p > b {
     color: red;
     font-weight: var(--poppins500);
     font-size: 12px;
-
     margin-top: -10px;
     margin-bottom: 0;
 
-    /* display: none; */
-
 }
-
-/* .email-err {
-    display: flex;
-    border: 1px solid blue;
-    
-    position: absolute;
-    top: 150px;
-    right: 30px;
-    
-}  */
 
 .err {
     width: 15px;
-    /* display: none; */
-
     right: 30px;
     top: 0px;
 }
@@ -202,8 +183,6 @@ form > p > b {
 .error1, .error2, .error3, .error4 {
     width: 15px;
     position: absolute;
-    /* top: 20px; */
-
 }
 
 .error1 {
@@ -284,9 +263,4 @@ form > p > b {
             font-size: 11px;
             white-space: nowrap;
     }
-
-
-    /* -============== */
-        
-
 }

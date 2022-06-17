@@ -1,10 +1,8 @@
-
-
-
 let btn = document.querySelector(".btn")
 
 
 btn.addEventListener("click", displayDate)
+
 
 function displayDate() {
     const first_name = document.querySelector(".first_name");
@@ -45,6 +43,7 @@ function displayDate() {
 
         first.innerHTML = "First Name cannot be empty";
     }
+
     
     if(last_name.value == "") {
         error2.style.display = "block";
@@ -57,11 +56,8 @@ function displayDate() {
     if(user_email.value == "") {
         error3.style.display = "block";
         
-        // changeColor()
         const text = "email@example/com";
-
         document.getElementsByName("email")[0].placeholder = text;
-
 
         email.innerHTML =   "Looks like this is not an email";
     }
