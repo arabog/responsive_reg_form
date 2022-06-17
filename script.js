@@ -29,7 +29,8 @@ function displayDate() {
 
     const error3 = document.querySelector(".error3")
     error3.classList.add("error3")
-  
+
+      
     const user_password = document.querySelector(".user_password");
     const password = document.querySelector(".password");
     password.classList.add("first")
@@ -37,23 +38,27 @@ function displayDate() {
     const error4 = document.querySelector(".error4")
     error4.classList.add("error4")
 
-
+    
     if(first_name.value == "") {
-            error1.style.display = "block";
-
-            first.innerHTML = "First Name cannot be empty";
+        error1.style.display = "block";
+        
+        first.innerHTML = "First Name cannot be empty";
     }
-
+    
     if(last_name.value == "") {
         error2.style.display = "block";
-
+        
         last.innerHTML =   "Last Name cannot be empty";
     }
-
-    if(last_name.value == "") {
+    
+    if(user_email.value == "") {
         error3.style.display = "block";
+        
+        const text = "email@example/com";
 
-        email.innerHTML =   "Email cannot be empty";
+        document.getElementsByName("email")[0].placeholder = text;
+
+        email.innerHTML =   "Looks like this is not an email";
     }
 
 

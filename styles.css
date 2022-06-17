@@ -114,6 +114,7 @@ input {
           margin-bottom: 18px;
           border-radius: 5px;
           border: 0.5px solid var(--grayish-blue);
+          outline: none;
 }
 
 .btn-wrapper {
@@ -229,6 +230,10 @@ form > p > b {
     display: none;
 }
 
+.placeholder {
+    /* display: none; */
+    color: var(--red);
+}
 
 
 @media (min-width: 800px) {
