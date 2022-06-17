@@ -41,12 +41,14 @@ function displayDate() {
     
     if(first_name.value == "") {
         error1.style.display = "block";
-        
+        document.getElementsByName("firstname")[0].placeholder = "";
+
         first.innerHTML = "First Name cannot be empty";
     }
     
     if(last_name.value == "") {
         error2.style.display = "block";
+        document.getElementsByName("lastname")[0].placeholder = "";
         
         last.innerHTML =   "Last Name cannot be empty";
     }
@@ -64,6 +66,7 @@ function displayDate() {
 
     if(user_password.value == "") {
         error4.style.display = "block";
+        document.getElementsByName("password")[0].placeholder = "";
 
         password.innerHTML =   "Password cannot be empty";
     }    
