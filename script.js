@@ -53,12 +53,15 @@ function displayDate() {
         last.innerHTML =   "Last Name cannot be empty";
     }
     
+
     if(user_email.value == "") {
         error3.style.display = "block";
         
+        // changeColor()
         const text = "email@example/com";
 
         document.getElementsByName("email")[0].placeholder = text;
+
 
         email.innerHTML =   "Looks like this is not an email";
     }

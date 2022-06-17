@@ -8,6 +8,16 @@
           <title>Registration Form</title>
 </head>
 
+<script>
+
+    function changeColor(toColor) {
+            addCss = document.createElement("style");
+            addCss.innerHTML = "::placeholder{color: " + toColor + "; }";
+            document.body.append(addCss);
+    }
+
+</script>
+
 <body>
           <div class="container">
                     <div class="wrapper">
@@ -40,7 +50,7 @@
                                                   <img class="error2" src="./images/icon-error.svg" alt="">
                                                   <div class="last"></div>
           
-                                                  <input class="user_email" type="email" placeholder="Email" name="email" value="">
+                                                  <input class="user_email placeholder" type="email" placeholder="Email" name="email" value="">
                                                   <img class="error3" src="./images/icon-error.svg" alt="">
                                                   <div class="email"></div>
 
@@ -51,7 +61,7 @@
                                                   <div class="password"></div>
           
                                                   <div class="btn-wrapper">
-                                                            <button class="btn" >CLAIM YOUR FREE TRIAL </button>
+                                                            <button class="btn" onclick="changeColor('red')" >CLAIM YOUR FREE TRIAL </button>
                                                   </div>
           
                                                   <p>By clicking the button, you are agreeing to our <b>Terms and Services</b> </p>
