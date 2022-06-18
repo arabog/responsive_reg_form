@@ -1,10 +1,19 @@
+function changeColor(toColor) {
+    addCss = document.createElement("style");
+    addCss.innerHTML = "::placeholder{color: " + toColor + "; }";
+    
+    document.body.append(addCss);
+}
+
 let btn = document.querySelector(".btn")
 
 
 btn.addEventListener("click", displayDate)
 
 
-function displayDate() {
+function displayDate(e) {
+    e.preventDefault();
+
     const first_name = document.querySelector(".first_name");
     const first = document.querySelector(".first");
     first.classList.add("first");
